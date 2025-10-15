@@ -8,9 +8,8 @@ export function Volunteering() {
       id="volunteering"
       eyebrow="Community"
       title="Extra Curriculars & Volunteering"
-      className="relative overflow-hidden before:bg-[radial-gradient(circle_at_bottom_right,_rgba(45,212,191,0.12),_transparent_70%)]"
+      className="bg-gradient-to-br from-white via-teal-50/50 to-white"
     >
-      <div className="pointer-events-none absolute inset-x-16 bottom-16 -z-10 h-48 rounded-full bg-sky-400/20 blur-3xl" aria-hidden="true" />
       <div className="grid gap-6 md:grid-cols-2">
         {volunteering.map((item) => (
           <Card

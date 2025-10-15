@@ -1,3 +1,5 @@
+// src/data/resume.js
+
 export const contact = {
   name: "Ashish Ranjan",
   tagline: "Designing observability, analytics & human-centred delivery",
@@ -8,10 +10,11 @@ export const contact = {
   linkedin: "https://www.linkedin.com/in/ashish-ranjan-67a9b122a",
   github: "https://github.com/coolashishranjan44551-bit",
   resume: "https://drive.google.com/",
-  image: "assets/ashish-portrait.png",
-  imageAlt: "Photograph of Ashish Ranjan",
+  image: "/ashish-portrait.svg",
+  imageAlt: "Illustrated portrait tile representing Ashish Ranjan",
 };
 
+// ================== EDUCATION ==================
 export const education = [
   {
     school: "BITS Pilani Goa Campus",
@@ -33,6 +36,7 @@ export const education = [
   },
 ];
 
+// ================== EXPERIENCE ==================
 export const experience = [
   {
     company: "CNH ITC – Gurugram",
@@ -69,7 +73,7 @@ export const experience = [
     role: "Founder",
     time: "Jan 2024 – Mar 2024",
     bullets: [
-      "Launched a lifestyle storefront and achieved ₹18k MRR through targeted Meta ad campaigns.",
+      "Launched a lifestyle storefront and achieved ₹18k monthly recurring revenue via Meta ads.",
       "Managed sourcing, Shopify experience, fulfilment and customer support loops end-to-end.",
       "Synthesised campaign data into recommendations and financial projections for growth planning."
     ],
@@ -86,53 +90,13 @@ export const experience = [
   },
 ];
 
+// ================== PROJECTS ==================
 export const projects = [
-  {
-    title: "AI Knowledge Assistant — RAG Chatbot for Internal Docs",
-    org: "CNH Industrial ITC",
-    time: "Sep 2025 – Nov 2025",
-    summary:
-      "Evolved a CLI RAG proof-of-concept into a secure, multi-tenant documentation assistant with web embedding support.",
-    bullets: [
-      "Split the legacy monolith into ingest, retriever and chat services to enable independent scaling and maintenance.",
-      "Automated ingestion for PDF, DOCX, TXT and MD sources with Zephyr-7B embeddings persisted in a FAISS index.",
-      "Exposed FastAPI endpoints for upload, chat and health checks to integrate with internal portals and tooling.",
-      "Shipped an embeddable HTML/JS chat widget with source highlighting, feedback capture and session persistence.",
-      "Secured access via API keys and OAuth scopes while isolating tenant-specific document collections.",
-      "Containerised the stack with Docker, Celery workers and Prometheus logging for production deployment readiness."
-    ],
-    stack: [
-      "Python",
-      "FastAPI",
-      "LangChain",
-      "FAISS",
-      "Hugging Face",
-      "Docker",
-      "Celery",
-      "Prometheus"
-    ],
-    repo: "https://github.com/coolashishranjan44551-bit/Gen-Ai",
-  },
-  {
-    title: "Customer Funnel Optimisation & Market Insights",
-    org: "Flipkart & Amazon · NEXTLEAP",
-    time: "Mar 2025 – May 2025",
-    summary:
-      "Combined Flipkart retention diagnostics with Amazon Brazil market research for GTM strategy.",
-    bullets: [
-      "Analysed 30k+ Flipkart support calls to pinpoint churn drivers and resolution bottlenecks.",
-      "Built Power BI dashboards for sentiment, SLA and engagement monitoring with actionable experiments.",
-      "Mapped Amazon Brazil purchasing behaviours to Indian cohorts using SQL joins, CTEs and windows."
-    ],
-    stack: ["Power BI", "PostgreSQL", "SQL", "Customer Analytics"],
-    repo: "https://github.com/coolashishranjan44551-bit/funnel-analytics",
-  },
   {
     title: "Synovial Fluid Microchannel Flow Study",
     org: "Mechanical Dept., BITS Pilani",
     time: "Jan 2025 – May 2025",
-    summary:
-      "Simulated synovial fluid transport through ~100 μm microchannels at shear rates of 10–1000 s⁻¹.",
+    summary: "Simulated synovial fluid transport through ~100 μm microchannels at shear rates of 10–1000 s⁻¹.",
     bullets: [
       "Investigated plasticity, elasticity, adhesion and wettability of bio-gels for biomedical lubrication.",
       "Achieved ~10% deviation from experimental literature benchmarks by calibrating CFD and MD models.",
@@ -141,40 +105,10 @@ export const projects = [
     stack: ["Ansys Fluent", "LAMMPS", "CFD", "Molecular Dynamics"],
   },
   {
-    title: "Multipurpose Agricultural Cultivator & Gearbox Design",
-    org: "Mechanical Dept. · BITS Pilani",
-    time: "Oct 2024 – Feb 2025",
-    summary:
-      "Delivered a sub-85 kg cultivator platform with Porsche-inspired gearbox architecture for smallholder mechanisation.",
-    bullets: [
-      "Led modular chassis, tool-mount and quick-swap interface design in Fusion 360/SolidWorks across an 8-person team.",
-      "Sized a 4-speed helical gearbox (shafts, bearings, keys, lubrication) informed by Porsche 911 benchmarks.",
-      "Computed pulley–belt power transmission, belt tension and wrap angles to balance durability and serviceability.",
-      "Ran ANSYS FEA on frame/tool mounts to validate stress, deflection and Factor of Safety before fabrication.",
-      "Released manufacturing drawings (GD&T, tolerances, BoMs) plus maintenance SOPs to cut service time."
-    ],
-    stack: ["Fusion 360", "SolidWorks", "ANSYS", "Gear Design"],
-    repo: "https://github.com/coolashishranjan44551-bit/multipurpose-cultivator",
-  },
-  {
-    title: "Lithography & Simulations Research Cluster",
-    org: "Sparkle Project · BITS Pilani",
-    time: "Aug 2024 – Feb 2025",
-    summary:
-      "Built a 7-node Linux cluster to accelerate lithography and vortex dynamics simulations.",
-    bullets: [
-      "Configured SSH and OpenMPI communication for distributed Fortran workloads and incident response workflows.",
-      "Applied IaC practices and anomaly detection to boost reliability while optimising runtime bottlenecks.",
-      "Earned ₹2 lakh Sparkle funding by demonstrating reproducible research performance gains."
-    ],
-    stack: ["Linux", "OpenMPI", "IaC", "Reliability"],
-  },
-  {
     title: "Projection Lithography Device Development",
     org: "Sparkle · Physics Dept. BITS Pilani",
     time: "Aug 2024 – Dec 2024",
-    summary:
-      "Designed mechanical sub-systems for an optical lithography device leveraging reverse microscopy.",
+    summary: "Designed mechanical sub-systems for an optical lithography device leveraging reverse microscopy.",
     bullets: [
       "Modelled and 3D printed joints plus lens holders focusing on heat-melt adhesion and optical alignment.",
       "Integrated mechanical-optical interfaces to balance plastic properties, tolerance and cost efficiency.",
@@ -182,8 +116,47 @@ export const projects = [
     ],
     stack: ["Fusion 360", "3D Printing", "Optics", "Mechanical Design"],
   },
+  {
+    title: "Cross-Market User Behaviour Study",
+    org: "Amazon Brazil–India Expansion · NEXTLEAP",
+    time: "Apr 2025 – May 2025",
+    summary: "Mapped Amazon Brazil transaction patterns to Indian cohorts to guide localisation and GTM strategy.",
+    bullets: [
+      "Queried multi-million row datasets in PostgreSQL using joins, CTEs, and window functions.",
+      "Modelled product-affinity segments; surfaced actionable GTM recommendations and seasonality insights.",
+      "Presented customer-journey artefacts aligning marketing and onboarding teams."
+    ],
+    stack: ["PostgreSQL", "SQL", "Segmentation", "GTM"],
+    repo: "https://github.com/coolashishranjan44551-bit/amazon-market-insights",
+  },
+  {
+    title: "Customer Funnel Optimisation",
+    org: "Flipkart Retention Project · NEXTLEAP",
+    time: "Mar 2025 – Apr 2025",
+    summary: "Analysed 30k+ support calls to flag churn triggers and craft retention experiments.",
+    bullets: [
+      "Applied sentiment scoring and time-series metrics to rank resolution gaps and SLA breaches.",
+      "Built Power BI dashboards for SLA, agent productivity, and engagement cohorts.",
+      "Packaged recommendations and ran stakeholder-style reviews to simulate client delivery."
+    ],
+    stack: ["Power BI", "Analytics", "Customer Success", "Experimentation"],
+    repo: "https://github.com/coolashishranjan44551-bit/funnel-analytics",
+  },
+  {
+    title: "SQL Server & Azure Observability",
+    org: "CNH ITC · Gurugram",
+    time: "Jul 2025 – Present",
+    summary: "Engineered end-to-end observability for 14+ SQL Servers with Prometheus/Grafana, extending into Azure logs.",
+    bullets: [
+      "Deployed Prometheus, Grafana, Loki/Promtail, and SQL Exporter (multi-target) with CI/CD; >50k logs/day automated.",
+      "Delivered 6 dashboards, 45 panels, 12 recording rules for CPU, memory, waits, slow queries, and backup compliance.",
+      "Standardised labels and alerts; improved capacity planning and incident MTTR with Azure-integrated analytics."
+    ],
+    stack: ["MSSQL", "Prometheus", "Grafana", "Loki/Promtail", "SQL Exporter", "Azure", "CI/CD"],
+  },
 ];
 
+// ================== LEADERSHIP ==================
 export const leadership = [
   {
     org: "Interbits",
@@ -214,17 +187,17 @@ export const leadership = [
   },
 ];
 
+// ================== VOLUNTEERING ==================
 export const volunteering = [
   {
     org: "Nirmaan Organisation",
     role: "Guider",
     time: "Jun 2021 – Nov 2021",
-    bullets: [
-      "Mentored school students and organised community outreach camps."
-    ],
+    bullets: ["Mentored school students and organised community outreach camps."],
   },
 ];
 
+// ================== SKILLS ==================
 export const skills = {
   core: [
     "Azure DevOps", "Observability", "Prometheus", "Grafana", "Scripting", "SQL",
@@ -233,7 +206,9 @@ export const skills = {
   ],
   tools: [
     "Git", "GitHub", "AWS", "PostgreSQL", "MySQL", "Excel", "PowerPoint Storytelling",
-    "Fusion 360", "SolidWorks", "ANSYS", "OpenMPI", "Adobe Suite", "Figma", "FL Studio"
+    "Fusion 360", "SolidWorks", "ANSYS", "OpenMPI", "Adobe Suite", "Figma", "FL Studio",
+    "Azure DevOps", "Observability", "Scripting", "SQL", "Python", "Power BI",
+    "Tableau (basics)", "ETL & Data Cleaning", "Dashboards", "Statistics", "Experiment Design"
   ],
   business: [
     "GTM Strategy", "Funnel Optimisation", "User Research", "Business Valuation (DCF)",
@@ -241,15 +216,14 @@ export const skills = {
   ],
 };
 
+// ================== TESTIMONIALS ==================
 export const testimonials = [
   {
-    quote:
-      "Ashish brings a rare blend of analytical rigour and creative storytelling. His dashboards always ladder up to decisions.",
+    quote: "Ashish brings a rare blend of analytical rigour and creative storytelling. His dashboards always ladder up to decisions.",
     name: "Mentor · NextLeap Fellowship",
   },
   {
-    quote:
-      "He translates ambiguous requirements into robust pipelines and documentation the team can instantly use.",
+    quote: "He translates ambiguous requirements into robust pipelines and documentation the team can instantly use.",
     name: "Engineering Lead · CNH ITC",
   },
 ];
