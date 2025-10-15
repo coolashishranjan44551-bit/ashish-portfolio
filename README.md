@@ -1,6 +1,6 @@
 # Ashish Ranjan — Portfolio
 
-A polished, fully responsive React + Tailwind portfolio tailored for Ashish Ranjan. The site highlights DevOps, data, product projects and is optimised for GitHub Pages deployment at [`coolashishranjan44551-bit.github.io/ashish-Portfolio`](https://coolashishranjan44551-bit.github.io/ashish-portfolio/).
+A polished, fully responsive React + Tailwind portfolio tailored for Ashish Ranjan. The site highlights DevOps, data, product projects and is optimised for GitHub Pages deployment at [`coolashishranjan44551-bit.github.io/ashish-portfolio`](https://coolashishranjan44551-bit.github.io/ashish-portfolio/).
 
 ## ✨ Highlights
 
