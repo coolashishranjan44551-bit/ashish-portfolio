@@ -86,6 +86,21 @@ npm run build
 git subtree push --prefix dist origin gh-pages
 ```
 
+## 🔀 Merging the work branch into `main`
+
+If you cloned this repository and want the latest portfolio changes on your `main` branch, run the following commands locally:
+
+```bash
+git checkout work                 # switch to the branch with the portfolio implementation
+git pull                          # ensure it matches the remote history
+git checkout main
+git pull                          # update main with the latest remote commits
+git merge work                    # bring the portfolio changes into main
+git push origin main              # publish the updated main branch
+```
+
+If Git reports merge conflicts, open each listed file, keep the desired edits, then run `git add <file>` for every resolved file. Finish with `git commit` (if Git didn’t create one automatically) and `git push origin main`.
+
 ## 🔧 Customisation Checklist
 
 - Update `contact.resume` in `src/data/resume.js` with your actual PDF link.
