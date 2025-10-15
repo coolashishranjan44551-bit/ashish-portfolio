@@ -12,12 +12,36 @@ A polished, fully responsive React + Tailwind portfolio tailored for Ashish Ranj
 
 ## 🚀 Getting Started
 
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) **18.x or newer**. Installing Node automatically provides the `npm` CLI that the project
+  scripts rely on. Verify your version with `node -v` and `npm -v`.
+- An internet connection that can reach `https://registry.npmjs.org`. Corporate networks sometimes block this domain; if that
+  happens, the install step will fail until the restriction is lifted or a proxy is configured.
+
+### Install and run locally
+
 ```bash
 npm install
 npm run dev
 ```
 
 The development server runs at [http://localhost:5173](http://localhost:5173). Hot reloading is enabled by default.
+
+### Troubleshooting `npm install`
+
+If you see `npm ERR! code E403` or `npm ERR! 403 Forbidden ... registry.npmjs.org`, your network is blocking the npm registry.
+To fix it:
+
+1. Confirm Node.js is installed (`node -v`). If not, install it from the official site or via a version manager such as
+   [nvm](https://github.com/nvm-sh/nvm).
+2. Check whether a firewall, VPN, or antivirus is intercepting npm traffic. Whitelist `registry.npmjs.org` or use your
+   organisation's approved proxy. With npm you can run `npm config set proxy http://proxy.company.com:PORT` (and similarly for
+   `https-proxy`).
+3. If you cannot adjust the network, download the dependencies once from an unrestricted machine and copy the resulting
+   `node_modules/` folder or create an offline npm mirror using tools like `npm pack` for each dependency.
+
+Once the network access issue is resolved, re-run `npm install` and the portfolio will build normally.
 
 ## 🧱 Project Structure
 
