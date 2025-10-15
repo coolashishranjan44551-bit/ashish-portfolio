@@ -1,3 +1,5 @@
+// src/data/resume.js
+
 export const contact = {
   name: "Ashish Ranjan",
   tagline: "Designing observability, analytics & human-centred delivery",
@@ -12,6 +14,7 @@ export const contact = {
   imageAlt: "Illustrated portrait tile representing Ashish Ranjan",
 };
 
+// ================== EDUCATION ==================
 export const education = [
   {
     school: "BITS Pilani Goa Campus",
@@ -33,6 +36,7 @@ export const education = [
   },
 ];
 
+// ================== EXPERIENCE ==================
 export const experience = [
   {
     company: "CNH ITC – Gurugram",
@@ -69,8 +73,7 @@ export const experience = [
     role: "Founder",
     time: "Jan 2024 – Mar 2024",
     bullets: [
-      "Launched a lifestyle storefront and achieved ₹18k MRR through targeted Meta ad campaigns.",
-      "Launched lifestyle brand storefront and achieved ₹18k monthly recurring revenue via Meta ads.",
+      "Launched a lifestyle storefront and achieved ₹18k monthly recurring revenue via Meta ads.",
       "Managed sourcing, Shopify experience, fulfilment and customer support loops end-to-end.",
       "Synthesised campaign data into recommendations and financial projections for growth planning."
     ],
@@ -87,13 +90,13 @@ export const experience = [
   },
 ];
 
+// ================== PROJECTS ==================
 export const projects = [
   {
     title: "Synovial Fluid Microchannel Flow Study",
     org: "Mechanical Dept., BITS Pilani",
     time: "Jan 2025 – May 2025",
-    summary:
-      "Simulated synovial fluid transport through ~100 μm microchannels at shear rates of 10–1000 s⁻¹.",
+    summary: "Simulated synovial fluid transport through ~100 μm microchannels at shear rates of 10–1000 s⁻¹.",
     bullets: [
       "Investigated plasticity, elasticity, adhesion and wettability of bio-gels for biomedical lubrication.",
       "Achieved ~10% deviation from experimental literature benchmarks by calibrating CFD and MD models.",
@@ -105,8 +108,7 @@ export const projects = [
     title: "Projection Lithography Device Development",
     org: "Sparkle · Physics Dept. BITS Pilani",
     time: "Aug 2024 – Dec 2024",
-    summary:
-      "Designed mechanical sub-systems for an optical lithography device leveraging reverse microscopy.",
+    summary: "Designed mechanical sub-systems for an optical lithography device leveraging reverse microscopy.",
     bullets: [
       "Modelled and 3D printed joints plus lens holders focusing on heat-melt adhesion and optical alignment.",
       "Integrated mechanical-optical interfaces to balance plastic properties, tolerance and cost efficiency.",
@@ -115,50 +117,10 @@ export const projects = [
     stack: ["Fusion 360", "3D Printing", "Optics", "Mechanical Design"],
   },
   {
-    title: "Lithography & Simulations Research Cluster",
-    org: "Sparkle Project · BITS Pilani",
-    time: "Aug 2024 – Feb 2025",
-    summary:
-      "Built a 7-node Linux cluster to accelerate lithography and vortex dynamics simulations.",
-    bullets: [
-      "Configured SSH and OpenMPI communication for distributed Fortran workloads and incident response workflows.",
-      "Applied IaC practices and anomaly detection to boost reliability while optimising runtime bottlenecks.",
-      "Earned ₹2 lakh Sparkle funding by demonstrating reproducible research performance gains."
-    ],
-    stack: ["Linux", "OpenMPI", "IaC", "Reliability"],
-  },
-  {
-    title: "Customer Funnel Optimisation & Market Insights",
-    org: "Flipkart & Amazon · NEXTLEAP",
-    time: "Mar 2025 – May 2025",
-    summary:
-      "Combined Flipkart retention diagnostics with Amazon Brazil market research for GTM strategy.",
-    bullets: [
-      "Analysed 30k+ Flipkart support calls to pinpoint churn drivers and resolution bottlenecks.",
-      "Built Power BI dashboards for sentiment, SLA and engagement monitoring with actionable experiments.",
-      "Mapped Amazon Brazil purchasing behaviours to Indian cohorts using SQL joins, CTEs and windows."
-    ],
-    stack: ["Power BI", "PostgreSQL", "SQL", "Customer Analytics"],
-    repo: "https://github.com/coolashishranjan44551-bit/funnel-analytics",
-  },
-  {
-    title: "Multipurpose Agricultural Cultivator",
-    org: "Mechanical Design & FEA Team Project",
-    time: "Aug 2024 – Dec 2024",
-    summary:
-      "Engineered a lean, modular cultivator frame with quick-swap tooling for smallholder farms.",
-    bullets: [
-      "Led chassis and tool-mount design in Fusion 360/SolidWorks with version-controlled reviews across an 8-member team.",
-      "Sized pulley–belt drives, computing power capacity, belt tension, wrap angles and maintenance-friendly layouts.",
-      "Performed ANSYS FEA (static & tensile) to validate stress, deflection and Factor of Safety before fabrication.",
-      "Delivered manufacturing drawings, BoMs and SOPs that reduced downstream service time."
-    ],
-    stack: ["Fusion 360", "SolidWorks", "ANSYS", "Manufacturing"],
     title: "Cross-Market User Behaviour Study",
     org: "Amazon Brazil–India Expansion · NEXTLEAP",
     time: "Apr 2025 – May 2025",
-    summary:
-      "Mapped Amazon Brazil transaction patterns to Indian cohorts to guide localisation and GTM strategy.",
+    summary: "Mapped Amazon Brazil transaction patterns to Indian cohorts to guide localisation and GTM strategy.",
     bullets: [
       "Queried multi-million row datasets in PostgreSQL using joins, CTEs, and window functions.",
       "Modelled product-affinity segments; surfaced actionable GTM recommendations and seasonality insights.",
@@ -167,13 +129,11 @@ export const projects = [
     stack: ["PostgreSQL", "SQL", "Segmentation", "GTM"],
     repo: "https://github.com/coolashishranjan44551-bit/amazon-market-insights",
   },
-
   {
     title: "Customer Funnel Optimisation",
     org: "Flipkart Retention Project · NEXTLEAP",
     time: "Mar 2025 – Apr 2025",
-    summary:
-      "Analysed 30k+ support calls to flag churn triggers and craft retention experiments.",
+    summary: "Analysed 30k+ support calls to flag churn triggers and craft retention experiments.",
     bullets: [
       "Applied sentiment scoring and time-series metrics to rank resolution gaps and SLA breaches.",
       "Built Power BI dashboards for SLA, agent productivity, and engagement cohorts.",
@@ -182,98 +142,21 @@ export const projects = [
     stack: ["Power BI", "Analytics", "Customer Success", "Experimentation"],
     repo: "https://github.com/coolashishranjan44551-bit/funnel-analytics",
   },
-
   {
     title: "SQL Server & Azure Observability",
     org: "CNH ITC · Gurugram",
     time: "Jul 2025 – Present",
-    summary:
-      "Engineered end-to-end observability for 14+ SQL Servers with Prometheus/Grafana, extending into Azure logs.",
+    summary: "Engineered end-to-end observability for 14+ SQL Servers with Prometheus/Grafana, extending into Azure logs.",
     bullets: [
       "Deployed Prometheus, Grafana, Loki/Promtail, and SQL Exporter (multi-target) with CI/CD; >50k logs/day automated.",
       "Delivered 6 dashboards, 45 panels, 12 recording rules for CPU, memory, waits, slow queries, and backup compliance.",
       "Standardised labels and alerts; improved capacity planning and incident MTTR with Azure-integrated analytics."
     ],
     stack: ["MSSQL", "Prometheus", "Grafana", "Loki/Promtail", "SQL Exporter", "Azure", "CI/CD"],
-    // repo: "",
-  },
-
-  {
-    title: "Synovial Fluid Microchannel Flow Study",
-    org: "Mechanical Dept. · BITS Pilani",
-    time: "Jan 2025 – May 2025",
-    summary:
-      "Simulated synovial-fluid flow in ~100 µm channels via coupled CFD–MD to study lubrication behaviour.",
-    bullets: [
-      "Explored shear rates of 10–1000 s⁻¹; assessed plasticity, elasticity, adhesion, and wettability of bio-gels.",
-      "Ran multiscale models (~10⁶ particles) in LAMMPS and validated CFD in Ansys Fluent; ~10% deviation vs literature.",
-      "Produced design insights for microscale biomedical lubrication and device geometry."
-    ],
-    stack: ["Ansys Fluent", "LAMMPS", "CFD", "Molecular Dynamics", "Python"],
-    // repo: "",
-  },
-
-  {
-    title: "Projection Lithography Device Development",
-    org: "Sparkle · BITS Pilani · Physics Dept.",
-    time: "Aug 2024 – Dec 2024",
-    summary:
-      "Designed an optical lithography setup using reverse-microscope principles with 3D-printed precision mounts.",
-    bullets: [
-      "CAD of lens holders and joints with heat-melt adhesion considerations; ensured mechatronic alignment tolerances.",
-      "Integrated mechanical-optical alignment; produced cost-optimised, serviceable assemblies.",
-      "Secured ₹2 lakh Sparkle funding; contributed to microfabrication and optics research."
-    ],
-    stack: ["CAD", "3D Printing", "Optics", "Precision Mechanics"],
-    // repo: "",
-  },
-
-  {
-    title: "Lithography & Simulations Research Cluster",
-    org: "Sparkle Project · BITS Pilani (Virtual Dynamics Lab)",
-    time: "Aug 2024 – Feb 2025",
-    summary:
-      "Built a 7-node Linux cluster and workflows to scale vortex-dynamics simulations and lithography research.",
-    bullets: [
-      "Configured SSH/OpenMPI for distributed Fortran runs; automated provisioning with IaC and incident playbooks.",
-      "Implemented anomaly-detection scripts; optimised runtime through profiling and resource tuning.",
-      "Received ₹2 lakh Sparkle funding; documented reproducible pipelines for student researchers."
-    ],
-    stack: ["Linux", "OpenMPI", "Fortran", "IaC/Automation", "Monitoring"],
-    // repo: "",
-  },
-
-  {
-    title: "Multipurpose Agricultural Cultivator — Mechanical Design & FEA",
-    org: "Mechanical Engineering · BITS Pilani",
-    time: "Aug 2024 – Dec 2024",
-    summary:
-      "Lean, modular cultivator for smallholder farms; owned pulley-belt drive and chassis/tool-mount design.",
-    bullets: [
-      "Sized and verified pulley–belt transmission (power capacity, tensions, wrap angle, center distance).",
-      "Designed frame & quick-swap tool interfaces in Fusion 360/SolidWorks; DFMA and serviceability focus.",
-      "Ran ANSYS FEA (static/tensile); validated von Mises stress, deflection, and Factor of Safety; released drawings/BoM."
-    ],
-    stack: ["Fusion 360", "SolidWorks", "ANSYS", "DFMA"],
-    // repo: "",
-  },
-
-  {
-    title: "Product Design & Data Launch",
-    org: "LAW (NGO) · Patna · Remote",
-    time: "Sep 2023 – Feb 2024",
-    summary:
-      "Enabled a pet-food launch with research-driven branding, packaging, and ops alignment.",
-    bullets: [
-      "Conducted stakeholder interviews and market sizing; informed positioning and pricing decisions.",
-      "Maintained inventory/demand logs; supported fulfilment forecasting and supply planning.",
-      "Produced internal docs, product guides, and design decks for cross-team execution."
-    ],
-    stack: ["UX Research", "Branding", "Ops"],
-    // repo: "",
   },
 ];
 
+// ================== LEADERSHIP ==================
 export const leadership = [
   {
     org: "Interbits",
@@ -304,17 +187,17 @@ export const leadership = [
   },
 ];
 
+// ================== VOLUNTEERING ==================
 export const volunteering = [
   {
     org: "Nirmaan Organisation",
     role: "Guider",
     time: "Jun 2021 – Nov 2021",
-    bullets: [
-      "Mentored school students and organised community outreach camps."
-    ],
+    bullets: ["Mentored school students and organised community outreach camps."],
   },
 ];
 
+// ================== SKILLS ==================
 export const skills = {
   core: [
     "Azure DevOps", "Observability", "Prometheus", "Grafana", "Scripting", "SQL",
@@ -323,13 +206,9 @@ export const skills = {
   ],
   tools: [
     "Git", "GitHub", "AWS", "PostgreSQL", "MySQL", "Excel", "PowerPoint Storytelling",
-    "Fusion 360", "SolidWorks", "ANSYS", "OpenMPI", "Adobe Suite", "Figma", "FL Studio"
+    "Fusion 360", "SolidWorks", "ANSYS", "OpenMPI", "Adobe Suite", "Figma", "FL Studio",
     "Azure DevOps", "Observability", "Scripting", "SQL", "Python", "Power BI",
     "Tableau (basics)", "ETL & Data Cleaning", "Dashboards", "Statistics", "Experiment Design"
-  ],
-  tools: [
-    "Git", "GitHub", "AWS", "PostgreSQL", "MySQL", "Excel", "PowerPoint Storytelling",
-    "Fusion 360", "ANSYS", "Adobe Suite", "Figma", "FL Studio"
   ],
   business: [
     "GTM Strategy", "Funnel Optimisation", "User Research", "Business Valuation (DCF)",
@@ -337,15 +216,14 @@ export const skills = {
   ],
 };
 
+// ================== TESTIMONIALS ==================
 export const testimonials = [
   {
-    quote:
-      "Ashish brings a rare blend of analytical rigour and creative storytelling. His dashboards always ladder up to decisions.",
+    quote: "Ashish brings a rare blend of analytical rigour and creative storytelling. His dashboards always ladder up to decisions.",
     name: "Mentor · NextLeap Fellowship",
   },
   {
-    quote:
-      "He translates ambiguous requirements into robust pipelines and documentation the team can instantly use.",
+    quote: "He translates ambiguous requirements into robust pipelines and documentation the team can instantly use.",
     name: "Engineering Lead · CNH ITC",
   },
 ];
