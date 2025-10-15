@@ -9,10 +9,19 @@ export function Education() {
       id="education"
       eyebrow="Academics"
       title="Education"
-      className="relative overflow-hidden before:bg-[radial-gradient(circle_at_bottom,_rgba(251,191,36,0.12),_transparent_70%)]"
+      className="relative overflow-hidden bg-gradient-to-br from-white via-amber-50/50 to-white"
     >
-      <div className="pointer-events-none absolute left-10 top-16 -z-10 h-40 w-40 rounded-full bg-ashish-500/20 blur-3xl" aria-hidden="true" />
-      <div className="grid gap-6 md:grid-cols-2">
+      {/* Decorative gradient blobs */}
+      <div
+        className="pointer-events-none absolute -left-20 top-10 h-72 w-72 rounded-full bg-amber-200/40 blur-3xl"
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-ashish-100/30 blur-3xl"
+        aria-hidden
+      />
+
+      <div className="relative grid gap-6 md:grid-cols-2">
         {education.map((item) => (
           <Card
             key={`${item.school}-${item.time}`}
@@ -21,8 +30,9 @@ export function Education() {
             meta={item.time}
             bullets={item.bullets ?? []}
             footer={
-              <span className="inline-flex items-center gap-2 text-xs uppercase tracking-wide text-ashish-200/90">
-                <GraduationCap size={16} /> {item.degree?.split(" · ")[0]}
+              <span className="inline-flex items-center gap-2 text-xs uppercase tracking-wide text-ashish-500/80">
+                <GraduationCap size={16} />
+                {item.degree?.split(" · ")[0]}
               </span>
             }
           />
