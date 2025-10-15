@@ -15,26 +15,96 @@ export const contact = {
 };
 
 // ================== EDUCATION ==================
-export const education = [
+export const projects = [
   {
-    school: "BITS Pilani Goa Campus",
-    degree: "M.Sc. (Hons.) Physics & B.E. (Hons.) Mechanical Engineering",
-    time: "2021 – 2026",
+    title: "SQL Server & Azure Observability",
+    org: "CNH ITC · Gurugram",
+    time: "Jul 2025 – Present",
+    summary: "Engineered end-to-end observability for 14+ SQL Servers with Prometheus/Grafana, extending into Azure logs.",
     bullets: [
-      "Dual-degree curriculum combining rigorous engineering analytics, experimentation and design thinking."
+      "Deployed Prometheus, Grafana, Loki/Promtail, and SQL Exporter (multi-target) with CI/CD; >50k logs/day automated.",
+      "Delivered 6 dashboards, 45 panels, 12 recording rules for CPU, memory, waits, slow queries, and backup compliance.",
+      "Standardised labels and alerts; improved capacity planning and incident MTTR with Azure-integrated analytics."
     ],
+    stack: ["MSSQL", "Prometheus", "Grafana", "Loki/Promtail", "SQL Exporter", "Azure", "CI/CD"],
   },
   {
-    school: "ST LAWRENCE ACD, Shahpur Karnaja Bikram, Patna",
-    degree: "Class XII · Science (78.2%)",
-    time: "2020",
+    title: "AI Knowledge Assistant — RAG Chatbot for Internal Docs",
+    org: "CNH ITC · Gurugram",
+    time: "Sep 2025 – Nov 2025",
+    summary: "Converted a CLI RAG bot into a secure, web-embeddable chatbot with REST APIs and persistent FAISS retrieval.",
+    bullets: [
+      "Modularised ingestion/retrieval; persisted FAISS index; used HuggingFaceEndpointEmbeddings with Zephyr-7B.",
+      "Built FastAPI endpoints (/upload, /chat, /health) with API key/OAuth auth and multi-tenant document collections.",
+      "Shipped an HTML/JS chat widget with citations; containerised via Docker and added Celery for async indexing."
+    ],
+    stack: ["FastAPI", "LangChain", "FAISS", "Hugging Face", "HTML/JS", "Docker", "Celery", "OAuth"],
+    repo: "https://github.com/coolashishranjan44551-bit/Gen-Ai",
   },
   {
-    school: "DAV Public School, Cantt Rd Khagaul Campus, Patna",
-    degree: "Class X (86.4%)",
-    time: "2018",
+    title: "Amazon Brazil–India Market Insights",
+    org: "Amazon Brazil–India Expansion · NEXTLEAP",
+    time: "Apr 2025 – May 2025",
+    summary: "Mapped Amazon Brazil transaction patterns to Indian cohorts to guide localisation and GTM strategy.",
+    bullets: [
+      "Queried multi-million row datasets in PostgreSQL using joins, CTEs, and window functions.",
+      "Modelled product-affinity segments; surfaced actionable GTM recommendations and seasonality insights.",
+      "Presented customer-journey artefacts aligning marketing and onboarding teams."
+    ],
+    stack: ["PostgreSQL", "SQL", "Segmentation", "GTM"],
+    repo: "https://github.com/coolashishranjan44551-bit/amazon-market-insights",
+  },
+  {
+    title: "Customer Funnel Optimisation",
+    org: "Flipkart Retention Project · NEXTLEAP",
+    time: "Mar 2025 – Apr 2025",
+    summary: "Analysed 30k+ support calls to flag churn triggers and craft retention experiments.",
+    bullets: [
+      "Applied sentiment scoring and time-series metrics to rank resolution gaps and SLA breaches.",
+      "Built Power BI dashboards for SLA, agent productivity, and engagement cohorts.",
+      "Packaged recommendations and ran stakeholder-style reviews to simulate client delivery."
+    ],
+    stack: ["Power BI", "Analytics", "Customer Success", "Experimentation"],
+    repo: "https://github.com/coolashishranjan44551-bit/funnel-analytics",
+  },
+  {
+    title: "Synovial Fluid Microchannel Flow Study",
+    org: "Mechanical Dept., BITS Pilani",
+    time: "Jan 2025 – May 2025",
+    summary: "Simulated synovial fluid transport through ~100 μm microchannels at shear rates of 10–1000 s⁻¹.",
+    bullets: [
+      "Investigated plasticity, elasticity, adhesion and wettability of bio-gels for biomedical lubrication.",
+      "Achieved ~10% deviation from experimental literature benchmarks by calibrating CFD and MD models.",
+      "Coupled Ansys Fluent with LAMMPS to study ~10⁶ particles for multiscale fluid design insights."
+    ],
+    stack: ["Ansys Fluent", "LAMMPS", "CFD", "Molecular Dynamics"],
+  },
+  {
+    title: "Multipurpose Agricultural Cultivator & Gearbox Design",
+    org: "Mechanical Dept., BITS Pilani",
+    time: "Oct 2024 – Feb 2025",
+    summary: "Designed a <85 kg cultivator and a 4-speed helical gearbox inspired by Porsche 911, covering shafts, bearings, keys, and lubrication.",
+    bullets: [
+      "Designed a lightweight (<85 kg) cultivator for plowing, seeding, and weeding with an optimized steel weeder blade.",
+      "Engineered a durable 4-speed helical gearbox (Porsche 911 baseline) including shaft, bearing, key, and lubrication analysis.",
+      "Used Fusion 360, ANSYS, and manual calcs to validate joints/welds and ensure reliable mechanical performance."
+    ],
+    stack: ["Fusion 360", "ANSYS", "Excel", "Mechanical Design"],
+  },
+  {
+    title: "Projection Lithography Device Development",
+    org: "Sparkle · Physics Dept. BITS Pilani",
+    time: "Aug 2024 – Dec 2024",
+    summary: "Designed mechanical sub-systems for an optical lithography device leveraging reverse microscopy.",
+    bullets: [
+      "Modelled and 3D-printed joints and lens holders focusing on heat-melt adhesion and optical alignment.",
+      "Integrated mech-optical interfaces to balance plastic properties, tolerance, and cost efficiency.",
+      "Secured ₹2 lakh Sparkle funding to advance campus microfabrication research capabilities."
+    ],
+    stack: ["Fusion 360", "3D Printing", "Optics", "Mechanical Design"],
   },
 ];
+
 
 // ================== EXPERIENCE ==================
 export const experience = [
