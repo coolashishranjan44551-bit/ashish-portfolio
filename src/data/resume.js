@@ -143,7 +143,7 @@ export const projects = [
       "Packaged recommendations and ran stakeholder-style reviews to simulate client delivery."
     ],
     stack: ["Power BI", "Analytics", "Customer Success", "Experimentation"],
-    repo: "https://github.com/coolashishranjan44551-bit/funnel-analytics",
+    repo: "https://github.com/coolashishranjan44551-bit/Flipkart_Dashbord_data_Anya",
   },
   {
     title: "Synovial Fluid Microchannel Flow Study",
