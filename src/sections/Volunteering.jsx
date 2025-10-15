@@ -10,7 +10,6 @@ export function Volunteering() {
       title="Extra Curriculars & Volunteering"
       className="bg-gradient-to-br from-white via-teal-50/50 to-white"
     >
-    <Section id="volunteering" eyebrow="Community" title="Extra Curriculars & Volunteering" className="bg-white/80">
       <div className="grid gap-6 md:grid-cols-2">
         {volunteering.map((item) => (
           <Card
