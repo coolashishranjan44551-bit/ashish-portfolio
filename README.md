@@ -87,20 +87,18 @@ npm run build
 git subtree push --prefix dist origin gh-pages
 ```
 
-## 🔀 Merging the work branch into `main`
+## 🔀 Publishing the `main` branch
 
-If you cloned this repository and want the latest portfolio changes on your `main` branch, run the following commands locally:
+The portfolio now lives directly on the `main` branch. To publish it to your GitHub repository, run:
 
 ```bash
-git checkout work                 # switch to the branch with the portfolio implementation
-git pull                          # ensure it matches the remote history
-git checkout main
-git pull                          # update main with the latest remote commits
-git merge work                    # bring the portfolio changes into main
-git push origin main              # publish the updated main branch
+git status                        # ensure there are no local changes pending
+git pull                          # grab the latest commits (should include this portfolio)
+git remote add origin git@github.com:coolashishranjan44551-bit/ashish-Portfolio.git
+git push -u origin main           # push the main branch once; subsequent pushes can omit -u
 ```
 
-If Git reports merge conflicts, open each listed file, keep the desired edits, then run `git add <file>` for every resolved file. Finish with `git commit` (if Git didn’t create one automatically) and `git push origin main`.
+If you already have a remote configured, simply push `main`. Any future updates should also be committed on `main`; the GitHub Actions workflow is triggered automatically whenever `main` is updated.
 
 ## 🔧 Customisation Checklist
 
