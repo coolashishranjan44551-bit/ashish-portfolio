@@ -43,7 +43,6 @@ To fix it:
 
 Once the network access issue is resolved, re-run `npm install` and the portfolio will build normally.
 
-codex/create-complete-portfolio-website-from-scratch-z8zjxg
 ### Removing the "Tests not run" warning
 
 If you see status messages such as `Tests not run (npm install blocked by environment restrictions)` in pull request summaries or
@@ -90,19 +89,16 @@ CI logs, it simply means the automated checks could not execute because dependen
 
 ### Automatic (recommended)
 
-1. Push the repository to GitHub under the `coolashishranjan44551-bit/ashish-Portfolio` project.
+1. Push the repository to GitHub under the `coolashishranjan44551-bit/ashish-portfolio` project.
 2. In **Settings → Pages**, choose "GitHub Actions" as the deployment source. The included workflow (`.github/workflows/deploy.yml`) will:
    - install dependencies,
    - run the production build, and
    - publish the `dist/` output to GitHub Pages.
-   Make sure the `homepage` field in `package.json` points to `https://coolashishranjan44551-bit.github.io/ashish-Portfolio/` so the generated asset paths match the GitHub Pages URL.
- codex/create-complete-portfolio-website-from-scratch-z8zjxg
+   Make sure the `homepage` field in `package.json` points to `https://coolashishranjan44551-bit.github.io/ashish-portfolio/` so the generated asset paths match the GitHub Pages URL.
 
-   > **Note:** The workflow automatically skips npm caching when no `package-lock.json` is present (which is why the template does not enable caching yet). As soon as you run `npm install` locally and commit the generated lockfile, the workflow will detect it and enable `cache: npm` for faster builds.
-
- main
+   > **Note:** npm caching is disabled by default because no `package-lock.json` is committed yet. After you run `npm install` locally and add the generated lockfile to git, you can re-enable caching by editing `.github/workflows/deploy.yml` and adding `cache: npm` under the `actions/setup-node@v4` step.
 3. The first deploy takes a few minutes. Track progress under **Actions → Deploy to GitHub Pages**.
-4. Once the workflow succeeds, the live site is available at [`https://coolashishranjan44551-bit.github.io/ashish-Portfolio/`](https://coolashishranjan44551-bit.github.io/ashish-Portfolio/).
+4. Once the workflow succeeds, the live site is available at [`https://coolashishranjan44551-bit.github.io/ashish-portfolio/`](https://coolashishranjan44551-bit.github.io/ashish-portfolio/).
 
 ### Manual (fallback)
 
@@ -118,7 +114,7 @@ The portfolio now lives directly on the `main` branch. To publish it to your Git
 ```bash
 git status                        # ensure there are no local changes pending
 git pull                          # grab the latest commits (should include this portfolio)
-git remote add origin git@github.com:coolashishranjan44551-bit/ashish-Portfolio.git
+git remote add origin git@github.com:coolashishranjan44551-bit/ashish-portfolio.git
 git push -u origin main           # push the main branch once; subsequent pushes can omit -u
 ```
 
