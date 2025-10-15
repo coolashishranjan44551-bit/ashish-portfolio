@@ -59,6 +59,7 @@ CI logs, it simply means the automated checks could not execute because dependen
    Both commands should finish without errors.
 3. Commit the updated lockfile (if it changed) and push again. GitHub will rerun the workflow, and the "Tests not run" note will
    disappear once the commands succeed.
+ main
 
 ## 🧱 Project Structure
 
