@@ -76,6 +76,7 @@ Once the network access issue is resolved, re-run `npm install` and the portfoli
    - install dependencies,
    - run the production build, and
    - publish the `dist/` output to GitHub Pages.
+   Make sure the `homepage` field in `package.json` points to `https://coolashishranjan44551-bit.github.io/ashish-Portfolio/` so the generated asset paths match the GitHub Pages URL.
 3. The first deploy takes a few minutes. Track progress under **Actions → Deploy to GitHub Pages**.
 4. Once the workflow succeeds, the live site is available at [`https://coolashishranjan44551-bit.github.io/ashish-Portfolio/`](https://coolashishranjan44551-bit.github.io/ashish-Portfolio/).
 

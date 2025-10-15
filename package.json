@@ -1,7 +1,8 @@
 {
   "name": "ashish-portfolio",
-  "private": true,
   "version": "1.0.0",
+  "description": "Personal portfolio site for Ashish Ranjan",
+  "private": true,
   "type": "module",
   "homepage": "https://coolashishranjan44551-bit.github.io/ashish-Portfolio/",
   "scripts": {
