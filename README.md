@@ -43,22 +43,6 @@ To fix it:
 
 Once the network access issue is resolved, re-run `npm install` and the portfolio will build normally.
 
-### Removing the "Tests not run" warning
-
-If you see status messages such as `Tests not run (npm install blocked by environment restrictions)` in pull request summaries or
-CI logs, it simply means the automated checks could not execute because dependencies were missing. To clear the warning:
-
-1. Ensure `npm install` completes successfully by following the troubleshooting steps above.
-2. Run the available checks locally:
-
-   ```bash
-   npm run lint
-   npm run build
-   ```
-
-   Both commands should finish without errors.
-3. Commit the updated lockfile (if it changed) and push again. GitHub will rerun the workflow, and the "Tests not run" note will
-   disappear once the commands succeed.
 
 ## 🧱 Project Structure
 
