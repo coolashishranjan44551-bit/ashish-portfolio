@@ -9,6 +9,7 @@ export function Skills() {
       title="Skills & Technologies"
       className="bg-gradient-to-br from-white via-ashish-50/50 to-indigo-50/40"
     >
+    <Section id="skills" eyebrow="Toolkit" title="Skills & Technologies" className="bg-white/70">
       <div className="grid gap-6 md:grid-cols-3">
         {Object.entries(skills).map(([group, items]) => (
           <div

@@ -11,6 +11,7 @@ export function Contact() {
       title="Let’s build something together"
       className="bg-gradient-to-br from-white via-ashish-50/60 to-emerald-50/40"
     >
+    <Section id="contact" eyebrow="Say hello" title="Let’s build something together">
       <div className="grid gap-6 lg:grid-cols-[1.2fr_1fr]">
         <div className="space-y-4 rounded-3xl border border-ashish-100/70 bg-white/80 p-6 shadow-sm shadow-slate-100 backdrop-blur">
           <p className="text-lg font-medium text-slate-800">
