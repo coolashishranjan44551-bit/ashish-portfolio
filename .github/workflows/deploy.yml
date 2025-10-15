@@ -19,22 +19,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Set up Node.js
-        if: hashFiles('package-lock.json') == ''
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - name: Set up Node.js (with npm cache)
-        if: hashFiles('package-lock.json') != ''
-        uses: actions/setup-node@v4
+
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-      - run: npm install
+          cache-dependency-path: package-lock.json
+
+      # Use npm ci if lockfile exists, otherwise fallback to npm install
+      - run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+
       - run: npm run build
+
       - uses: actions/configure-pages@v5
+
       - uses: actions/upload-pages-artifact@v3
         with:
+          # Change this if your build output folder is different (e.g., "build" for CRA)
           path: dist
 
   deploy:
