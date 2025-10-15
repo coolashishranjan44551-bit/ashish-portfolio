@@ -4,7 +4,7 @@
   "description": "Personal portfolio site for Ashish Ranjan",
   "private": true,
   "type": "module",
-  "homepage": "https://coolashishranjan44551-bit.github.io/ashish-Portfolio/",
+  "homepage": "https://coolashishranjan44551-bit.github.io/ashish-portfolio/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
