@@ -43,6 +43,7 @@ To fix it:
 
 Once the network access issue is resolved, re-run `npm install` and the portfolio will build normally.
 
+
 ## 🧱 Project Structure
 
 ```
