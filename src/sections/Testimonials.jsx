@@ -8,6 +8,7 @@ export function Testimonials() {
       eyebrow="Social proof"
       title="What collaborators say"
       className="bg-gradient-to-br from-ashish-500/10 via-white to-amber-50/40"
+      className="bg-gradient-to-br from-white via-ashish-50/60 to-white"
     >
       <div className="grid gap-6 md:grid-cols-2">
         {testimonials.map((testimonial, index) => (

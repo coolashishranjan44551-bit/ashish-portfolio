@@ -35,6 +35,15 @@ export function Hero() {
             <span className="inline-flex items-center gap-2 rounded-full bg-ashish-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.35em] text-ashish-700">
               {contact.tagline}
             </span>
+    <section id="top" className="relative overflow-hidden bg-gradient-to-b from-ashish-50 via-white to-white">
+      <div className="absolute -left-20 top-10 h-72 w-72 rounded-full bg-ashish-200/50 blur-3xl" aria-hidden />
+      <div className="absolute -right-10 top-40 h-72 w-72 rounded-full bg-teal-200/40 blur-3xl" aria-hidden />
+      <div className="relative mx-auto grid max-w-6xl grid-cols-1 gap-12 px-4 py-24 md:grid-cols-[1.2fr_1fr] md:py-28 lg:py-32">
+        <div className="space-y-8">
+          <div className="inline-flex items-center gap-2 rounded-full border border-slate-200/80 bg-white/70 px-4 py-2 text-xs font-medium text-slate-600 shadow-sm shadow-slate-100 backdrop-blur">
+            <MapPin size={16} className="text-ashish-500" /> {contact.location} · {contact.focus}
+          </div>
+          <div className="space-y-6">
             <h1 className="font-display text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl lg:text-6xl">
               Reliable systems, sharp insights & human-centred experiences.
             </h1>
@@ -84,6 +93,7 @@ export function Hero() {
             </p>
           </div>
           <div className="space-y-3 rounded-2xl border border-slate-200/60 bg-slate-50/90 p-4">
+          <div className="space-y-3 rounded-2xl border border-slate-200/60 bg-slate-50/80 p-4">
             <h3 className="text-sm font-semibold text-slate-700">Quick links</h3>
             <div className="flex flex-col gap-2 text-sm text-slate-600">
               <a href={contact.linkedin} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 hover:text-ashish-600">
@@ -101,6 +111,7 @@ export function Hero() {
             </div>
           </div>
           <div className="rounded-2xl border border-ashish-200/70 bg-gradient-to-br from-ashish-50 via-white to-amber-50/70 p-5 text-sm text-slate-600 shadow-inner">
+          <div className="rounded-2xl border border-ashish-200/70 bg-gradient-to-br from-ashish-50 via-white to-white p-5 text-sm text-slate-600 shadow-inner">
             <p>
               "I enjoy combining measurable impact with delightful delivery. If you’re building across DevOps, analytics or product, let’s talk."
             </p>
