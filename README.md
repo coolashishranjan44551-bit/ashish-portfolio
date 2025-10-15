@@ -43,6 +43,25 @@ To fix it:
 
 Once the network access issue is resolved, re-run `npm install` and the portfolio will build normally.
 
+codex/create-complete-portfolio-website-from-scratch-z8zjxg
+### Removing the "Tests not run" warning
+
+If you see status messages such as `Tests not run (npm install blocked by environment restrictions)` in pull request summaries or
+CI logs, it simply means the automated checks could not execute because dependencies were missing. To clear the warning:
+
+1. Ensure `npm install` completes successfully by following the troubleshooting steps above.
+2. Run the available checks locally:
+
+   ```bash
+   npm run lint
+   npm run build
+   ```
+
+   Both commands should finish without errors.
+3. Commit the updated lockfile (if it changed) and push again. GitHub will rerun the workflow, and the "Tests not run" note will
+   disappear once the commands succeed.
+=======
+ main
 
 ## 🧱 Project Structure
 
@@ -78,6 +97,11 @@ Once the network access issue is resolved, re-run `npm install` and the portfoli
    - run the production build, and
    - publish the `dist/` output to GitHub Pages.
    Make sure the `homepage` field in `package.json` points to `https://coolashishranjan44551-bit.github.io/ashish-Portfolio/` so the generated asset paths match the GitHub Pages URL.
+ codex/create-complete-portfolio-website-from-scratch-z8zjxg
+
+   > **Note:** The workflow automatically skips npm caching when no `package-lock.json` is present (which is why the template does not enable caching yet). As soon as you run `npm install` locally and commit the generated lockfile, the workflow will detect it and enable `cache: npm` for faster builds.
+
+ main
 3. The first deploy takes a few minutes. Track progress under **Actions → Deploy to GitHub Pages**.
 4. Once the workflow succeeds, the live site is available at [`https://coolashishranjan44551-bit.github.io/ashish-Portfolio/`](https://coolashishranjan44551-bit.github.io/ashish-Portfolio/).
 
