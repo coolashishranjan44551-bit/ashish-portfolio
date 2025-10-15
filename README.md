@@ -45,16 +45,22 @@ The development server runs at [http://localhost:5173](http://localhost:5173). H
 
 ## 🌐 Deploying to GitHub Pages
 
+### Automatic (recommended)
+
 1. Push the repository to GitHub under the `coolashishranjan44551-bit/ashish-Portfolio` project.
-2. Run `npm run build` to generate the `dist` folder.
-3. Deploy using the GitHub Pages workflow (enable `gh-pages` branch or use GitHub Actions). For manual deployment:
+2. In **Settings → Pages**, choose "GitHub Actions" as the deployment source. The included workflow (`.github/workflows/deploy.yml`) will:
+   - install dependencies,
+   - run the production build, and
+   - publish the `dist/` output to GitHub Pages.
+3. The first deploy takes a few minutes. Track progress under **Actions → Deploy to GitHub Pages**.
+4. Once the workflow succeeds, the live site is available at [`https://coolashishranjan44551-bit.github.io/ashish-Portfolio/`](https://coolashishranjan44551-bit.github.io/ashish-Portfolio/).
 
-   ```bash
-   npm run build
-   git subtree push --prefix dist origin gh-pages
-   ```
+### Manual (fallback)
 
-4. Confirm the site at [`https://coolashishranjan44551-bit.github.io/ashish-Portfolio/`](https://coolashishranjan44551-bit.github.io/ashish-Portfolio/).
+```bash
+npm run build
+git subtree push --prefix dist origin gh-pages
+```
 
 ## 🔧 Customisation Checklist
 
