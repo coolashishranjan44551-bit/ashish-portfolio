@@ -10,7 +10,7 @@ export function Projects() {
     <Section
       id="projects"
       eyebrow="Featured"
-      title="Selected Projects"
+      title="Projects"
       className="relative overflow-hidden bg-gradient-to-br from-ashish-50/80 via-white to-sky-50/60"
     >
       {/* Decorative gradient blobs */}
