@@ -151,8 +151,8 @@ After the merge, consider deleting the feature branch (`git branch -d work` and 
 - Update `contact.resume` in `src/data/resume.js` with your actual PDF link.
 - Replace placeholder GitHub project URLs with the real repositories.
 - Swap testimonial quotes with authentic feedback snippets.
-- Add your headshot (JPG/PNG/SVG) to `public/assets/ashish-portrait.png`. If you use a different name, update
-  `contact.image` in `src/data/resume.js` to point to the new file.
+- Replace `public/ashish-portrait.svg` with your own headshot (JPG/PNG/SVG). If you prefer a raster image, update
+  `contact.image` to point at the new filename.
 - Add OG images or analytics scripts via `index.html` if needed.
 
 ## 💡 GitHub Optimisation Tips

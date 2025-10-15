@@ -8,9 +8,8 @@ export function Leadership() {
       id="leadership"
       eyebrow="Beyond work"
       title="Positions of Responsibility"
-      className="relative overflow-hidden before:bg-[radial-gradient(circle_at_top_left,_rgba(236,72,153,0.12),_transparent_70%)]"
+      className="bg-gradient-to-br from-white via-rose-50/50 to-ashish-50/40"
     >
-      <div className="pointer-events-none absolute right-16 top-24 -z-10 h-48 w-48 rounded-full bg-ashish-500/20 blur-3xl" aria-hidden="true" />
       <div className="grid gap-6 md:grid-cols-2">
         {leadership.map((item) => (
           <Card
