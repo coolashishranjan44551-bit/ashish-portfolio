@@ -95,7 +95,7 @@ CI logs, it simply means the automated checks could not execute because dependen
    - publish the `dist/` output to GitHub Pages.
    Make sure the `homepage` field in `package.json` points to `https://coolashishranjan44551-bit.github.io/ashish-Portfolio/` so the generated asset paths match the GitHub Pages URL.
 
-   > **Note:** Because this repository intentionally omits a `package-lock.json` (npm install is blocked in the provided environment), the workflow skips dependency caching. Once you run `npm install` locally and commit the generated lockfile, re-enable caching by adding `cache: npm` back to the `actions/setup-node` step.
+   > **Note:** The workflow automatically skips npm caching when no `package-lock.json` is present (which is why the template does not enable caching yet). As soon as you run `npm install` locally and commit the generated lockfile, the workflow will detect it and enable `cache: npm` for faster builds.
 3. The first deploy takes a few minutes. Track progress under **Actions → Deploy to GitHub Pages**.
 4. Once the workflow succeeds, the live site is available at [`https://coolashishranjan44551-bit.github.io/ashish-Portfolio/`](https://coolashishranjan44551-bit.github.io/ashish-Portfolio/).
 
