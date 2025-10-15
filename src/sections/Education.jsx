@@ -5,6 +5,12 @@ import { education } from "../data/resume.js";
 
 export function Education() {
   return (
+    <Section
+      id="education"
+      eyebrow="Academics"
+      title="Education"
+      className="bg-gradient-to-br from-white via-amber-50/50 to-white"
+    >
     <Section id="education" eyebrow="Academics" title="Education">
       <div className="grid gap-6 md:grid-cols-2">
         {education.map((item) => (

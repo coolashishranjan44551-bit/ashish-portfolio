@@ -12,7 +12,7 @@ import { Footer } from "./components/Footer.jsx";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-ashish-50/60 text-slate-900">
       <NavBar />
       <main>
         <Hero />

@@ -4,7 +4,12 @@ import { leadership } from "../data/resume.js";
 
 export function Leadership() {
   return (
-    <Section id="leadership" eyebrow="Beyond work" title="Positions of Responsibility">
+    <Section
+      id="leadership"
+      eyebrow="Beyond work"
+      title="Positions of Responsibility"
+      className="bg-gradient-to-br from-white via-rose-50/50 to-ashish-50/40"
+    >
       <div className="grid gap-6 md:grid-cols-2">
         {leadership.map((item) => (
           <Card

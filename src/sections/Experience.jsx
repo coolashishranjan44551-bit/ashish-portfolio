@@ -4,6 +4,12 @@ import { experience } from "../data/resume.js";
 
 export function Experience() {
   return (
+    <Section
+      id="experience"
+      eyebrow="Career"
+      title="Experience & Impact"
+      className="bg-gradient-to-br from-white via-ashish-50/60 to-emerald-50/50"
+    >
     <Section id="experience" eyebrow="Career" title="Experience & Impact">
       <div className="grid gap-6 lg:grid-cols-2">
         {experience.map((role) => (

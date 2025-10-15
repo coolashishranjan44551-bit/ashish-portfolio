@@ -59,7 +59,6 @@ CI logs, it simply means the automated checks could not execute because dependen
    Both commands should finish without errors.
 3. Commit the updated lockfile (if it changed) and push again. GitHub will rerun the workflow, and the "Tests not run" note will
    disappear once the commands succeed.
- main
 
 ## 🧱 Project Structure
 
@@ -120,11 +119,40 @@ git push -u origin main           # push the main branch once; subsequent pushes
 
 If you already have a remote configured, simply push `main`. Any future updates should also be committed on `main`; the GitHub Actions workflow is triggered automatically whenever `main` is updated.
 
+## 📥 Creating a Pull Request
+
+If you prefer working on a separate branch (for example `work`) and want to open a pull request (PR) into `main`, follow these steps:
+
+1. Make sure all changes are committed on your feature branch and pushed to GitHub:
+
+   ```bash
+   git status                     # confirm the branch is clean
+   git push origin work           # replace 'work' with your branch name if different
+   ```
+
+2. In your browser, go to the repository page: `https://github.com/coolashishranjan44551-bit/ashish-portfolio`.
+3. You should see a prompt offering to “Compare & pull request” for the branch you just pushed. Click that button. If you do not see the banner, choose **Pull requests → New pull request** and select `work` as the source branch and `main` as the target.
+4. Review the diff, enter a descriptive PR title and summary, then click **Create pull request**.
+5. Once the PR is approved (or you are satisfied with the changes), click **Merge pull request** and choose **Confirm merge**. GitHub will merge your branch into `main` and the deployment workflow will publish the latest build.
+
+If merging locally is easier, you can also run:
+
+```bash
+git checkout main
+git pull                          # get the latest main
+git merge work                    # resolve any conflicts if prompted
+git push origin main
+```
+
+After the merge, consider deleting the feature branch (`git branch -d work` and `git push origin --delete work`) to keep the repository tidy.
+
 ## 🔧 Customisation Checklist
 
 - Update `contact.resume` in `src/data/resume.js` with your actual PDF link.
 - Replace placeholder GitHub project URLs with the real repositories.
 - Swap testimonial quotes with authentic feedback snippets.
+- Replace `public/ashish-portrait.svg` with your own headshot (JPG/PNG/SVG). If you prefer a raster image, update
+  `contact.image` to point at the new filename.
 - Add OG images or analytics scripts via `index.html` if needed.
 
 ## 💡 GitHub Optimisation Tips

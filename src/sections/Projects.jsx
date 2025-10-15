@@ -6,6 +6,12 @@ import { projects } from "../data/resume.js";
 
 export function Projects() {
   return (
+    <Section
+      id="projects"
+      eyebrow="Featured"
+      title="Selected Projects"
+      className="bg-gradient-to-br from-ashish-50/80 via-white to-sky-50/60"
+    >
     <Section id="projects" eyebrow="Featured" title="Selected Projects">
       <div className="grid gap-6 md:grid-cols-2">
         {projects.map((project) => (
